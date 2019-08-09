@@ -6,7 +6,7 @@
     app:layout_collapseMode="parallax"
     app:layout_collapseParallaxMultiplier="0.48"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
+    android:background="@drawable/custom_card"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView
         android:layout_width="match_parent"
@@ -17,14 +17,17 @@
         android:src="@drawable/farmaish"/>
     <androidx.cardview.widget.CardView
         android:layout_below="@id/im"
+        android:layout_marginTop="-20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cardview"
+        android:layout_marginBottom="-28dp"
         app:cardCornerRadius="28dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="28dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -109,11 +112,12 @@
                 android:text="A dedicated team commited to prepare a quality food with quality contents and fully hyginic home food"/>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp">
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:layout_marginBottom="0dp"
                 android:layout_alignParentLeft="true"
                 android:orientation="vertical">
             <TextView

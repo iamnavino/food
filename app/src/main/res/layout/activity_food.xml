@@ -59,14 +59,32 @@ android:layout_height="match_parent"
         android:drawableLeft="@drawable/custom_phone"
         android:textAllCaps="false"
         ></Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:fitsSystemWindows="false"
+        app:layout_collapseParallaxMultiplier="0.40"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:layout_marginLeft="15dp"
+            android:text="Tiffins"/>
+        <View
+            android:layout_width="70dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000000"/>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_collapseParallaxMultiplier="0.40"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:id="@+id/recycler_view">
-
     </androidx.recyclerview.widget.RecyclerView>
-
-
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
