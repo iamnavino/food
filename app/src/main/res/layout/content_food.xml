@@ -4,12 +4,19 @@
     android:id="@+id/titleContainer"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     app:layout_collapseMode="parallax"
-    app:layout_collapseParallaxMultiplier="0.70"
-    android:layout_marginTop="150dp"
+    app:layout_collapseParallaxMultiplier="0.48"
     android:layout_height="wrap_content"
+    android:background="#ffffff"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/im"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/farmaish"/>
     <androidx.cardview.widget.CardView
-        android:layout_centerInParent="true"
+        android:layout_below="@id/im"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cardview"
@@ -135,4 +142,5 @@
         </RelativeLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     </RelativeLayout>

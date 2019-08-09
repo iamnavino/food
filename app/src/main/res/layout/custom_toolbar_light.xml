@@ -3,14 +3,12 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:id="@+id/tool_container"
-    android:fitsSystemWindows="true"
-   android:layout_marginTop="15dp"
-    android:layout_marginBottom="5dp"
     android:layout_height="?attr/actionBarSize">
 <ImageView
     android:layout_alignParentLeft="true"
     android:layout_width="wrap_content"
     android:id="@+id/ic_left"
+    android:layout_marginLeft="24dp"
     android:src="@drawable/ic_arrow_back_white"
     android:layout_centerVertical="true"
     android:layout_height="wrap_content" />
@@ -28,7 +26,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/ic_right"
         android:src="@drawable/ic_share_white"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="24dp"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"/>
 </RelativeLayout>
